@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* 1. Global Page Theme (Base Styles) */
+@layer base {
+    body {
+        /* Sets the default background and text color for the whole app */
+        @apply bg-slate-900 text-slate-50 antialiased;
+    }
+
+    h1 {
+        /* Sets a default theme for all H1 headers */
+        @apply text-3xl font-bold text-blue-400 mb-4;
+    }
+
+    a {
+        /* Sets a default theme for links */
+        @apply text-blue-400 underline hover:text-blue-300;
+    }
+}
+
+/* 2. Reusable Component Theme */
+@layer components {
+    /* Creating a custom class `.card` that bundles tailwind utilities */
+    .card {
+        @apply bg-slate-800 p-6 m-2 rounded-lg shadow-xl border border-slate-700;
+    }
+
+    .skill-card {
+        @apply bg-slate-900 p-6 m-2 rounded-lg shadow-xl border border-slate-800;
+    }
+
+    .skill-title {
+        @apply text-2xl w-44 bg-amber-200 flex justify-center items-center rounded-2xl py-2 shadow-2xl border-2 border-amber-950
+        text-blue-600 text-shadow-2xs
+    }
+
+    .skill-content {
+        @apply flex bg-slate-600 rounded-2xl p-2 pl-7 mt-2 mb-4
+    }
+
+    .skill-footer {
+        @apply font-mono font-bold pt-2
+    }
+
+    /* Creating a custom button class */
+    .btn-primary {
+        @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition-colors;
+    }
+
+    .section-title {
+        @apply text-3xl w-44 bg-gray-900 flex justify-center items-center rounded-2xl py-2
+    }
+
+    .section-content {
+        @apply flex bg-slate-700 rounded-2xl p-2 pl-7 mt-2
+    }
+}
