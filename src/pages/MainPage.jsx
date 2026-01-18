@@ -1,5 +1,6 @@
-import AboutMe from "../components/AboutMe.jsx";
-import Skills from "../components/Skills.jsx";
+import AboutMe from "../components/AboutMe/AboutMe.jsx";
+import Skills from "../components/Skills/Skills.jsx";
+import Projects from "../components/Projects/Projects.jsx";
 
 
 function MainPage() {
@@ -7,13 +8,11 @@ function MainPage() {
 
 
     return (
-    // About me
     <div>
         <AboutMe />
         <Skills />
+        <Projects />
     </div>
-
-    // Skills
 
     )
 }

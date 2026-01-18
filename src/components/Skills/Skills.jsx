@@ -6,7 +6,7 @@ function Skills() {
         {name: "C#", context: "Learning C#", length: "3 years"},
         {name: "Java", context: "Learning C#", length: "3 years"},
         {name: "SQL", context: "Learning C#", length: "3 years"},
-
+        
     ]
 
 
