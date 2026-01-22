@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard.jsx";
 import workoutScreen from "../../assets/workoutScreen.jpeg"
 import MediaLibraryOptimizer from "../../assets/mediaLibraryOptimizer.png";
+import portfolio from "../../assets/portfolio.jpeg";
 
 function Projects() {
 
@@ -15,12 +16,19 @@ function Projects() {
             {name: "Github"}
             ]
         },
-        {name: "Media Library Optimizer", image: MediaLibraryOptimizer, description: "A C# developed application to help optimize self hosted media libraries for storage and quality.", skills: [
+        {name: "Media Library Optimizer", image: MediaLibraryOptimizer, gitHub: "https://github.com/Slummybell23/MediaLibraryOptimizer", description: "A C# developed application to help optimize self hosted media libraries for storage and quality.", skills: [
             {name: "C#"},
             {name: ".Net 8"},
             {name: "Ffmpeg"},
             {name: "Docker"},
             {name: "Github"}
+            ]
+        },
+        {name: "Portfolio", image: portfolio, gitHub: "https://github.com/Slummybell23/ReactPortfolio", description: "A React JS built webpage to act as a home for my projects, skills, and mindset.", skills: [
+                {name: "React"},
+                {name: "Javascript"},
+                {name: "CSS"},
+                {name: "Github"}
             ]
         }
     ]
