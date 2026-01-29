@@ -25,7 +25,7 @@ function ContactMe() {
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                             <span>LinkedIn</span>
                         </a>
-
+aa
                         <a
                             href="https://github.com/Slummybell23"
                             target="_blank"
@@ -43,33 +43,12 @@ function ContactMe() {
                 </div>
 
                 <div className="bg-slate-800 p-6 rounded-xl shadow-lg md:pl-12">
-                    <h3 className="text-xl font-semibold mb-4 text-indigo-400">
-                        Send me a message
-                    </h3>
-
-                    <form className="flex flex-col gap-4">
-                        <div>
-                            <label className="block text-sm text-slate-400 mb-1">Your Email</label>
-                            <input
-                                type="email"
-                                placeholder="hello@example.com"
-                                className="w-full p-3 rounded bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-indigo-500 transition-colors"
-                            />
-                        </div>
-
-                        <div>
-                            <label className="block text-sm text-slate-400 mb-1">Message</label>
-                            <textarea
-                                rows="4"
-                                placeholder="I'd love to chat about..."
-                                className="w-full p-3 rounded bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-indigo-500 transition-colors"
-                            ></textarea>
-                        </div>
-
-                        <button className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded transition-colors mt-2">
-                            Send Message
-                        </button>
-                    </form>
+                    <a
+                        className="text-xl font-semibold mb-4 text-indigo-400 transition-colors hover:text-cyan-900"
+                        href="mailto:cachesalyers@gmail.com?subject=Inquiry from Website&body=Hi, I would like to discuss..."
+                    >
+                        Send me an email
+                    </a>
                 </div>
 
             </div>

@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard.jsx";
 import workoutScreen from "../../assets/workoutScreen.jpeg"
-import MediaLibraryOptimizer from "../../assets/mediaLibraryOptimizer.png";
+import MediaLibraryOptimizer from "../../assets/MediaLibraryOptimizer.png";
 import portfolio from "../../assets/portfolio.jpeg";
 
 function Projects() {
