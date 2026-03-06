@@ -6,7 +6,7 @@ import portfolio from "../../assets/portfolio.jpeg";
 function Projects() {
 
     const projects = [
-        {name: "Cache's Workout App", description: "A Full Stack Workout tracker for IOS", image: workoutScreen, gitHub: "https://github.com/Slummybell23/MediaLibraryOptimizer", skills: [
+        {name: "Cache's Workout App", description: "A Full Stack Workout tracker for IOS", image: workoutScreen, gitHub: "https://www.linkedin.com/in/cache-salyers/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADPHYFkB2aCRoBeA6OppslYIssr_98i4NSM", skills: [
             {name: "Postgres"},
             {name: "C#"},
             {name: ".Net 8"},

@@ -78,7 +78,7 @@ function WorkHistory() {
                                             <div className="flex flex-col gap-2">
                                                 {role.accolades.map((accolade, i) => (
                                                     <div key={i} className="text-sm text-yellow-300 bg-yellow-900/20 py-1.5 px-3 rounded border-l-2 border-yellow-500 w-fit">
-                                                        🏆 {accolade}
+                                                         {accolade}
                                                     </div>
                                                 ))}
                                             </div>

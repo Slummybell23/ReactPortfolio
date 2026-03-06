@@ -16,7 +16,7 @@ function Education() {
                 </div>
 
                 <div className="text-sm text-yellow-300 bg-yellow-900/20 py-1.5 px-3 rounded border-l-2 border-yellow-500 w-fit">
-                    🏆 Bachelors of Science in Computer Science
+                     Bachelors of Science in Computer Science
                 </div>
             </div>
 
