@@ -1,37 +1,30 @@
-import "./projectCard.css"
-
 function ProjectCard({ project }) {
     return (
-        <section className="w-full bg-slate-900 rounded-3xl shadow-2xl overflow-hidden border border-slate-800">
-
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-
-                <div className="bg-blue-950 flex items-center justify-center p-8 h-80 md:h-auto">
+        <article className="card overflow-hidden p-0">
+            <div className="grid md:grid-cols-2">
+                <div className="flex min-h-56 items-center justify-center bg-neutral-50 p-8">
                     <img
-                        className="object-contain h-full w-auto max-h-96 rounded-lg shadow-md"
+                        className="max-h-56 w-auto rounded-2xl object-contain shadow-sm"
                         src={project.image}
                         alt={project.name}
+                        loading="lazy"
                     />
                 </div>
 
-                <div className="p-8 lg:p-12 flex flex-col justify-center bg-slate-900">
-
-                    <h3 className="text-3xl md:text-4xl font-extrabold text-indigo-400 mb-6 leading-tight">
+                <div className="flex flex-col justify-center p-8 md:p-10">
+                    <h3 className="text-2xl font-semibold tracking-tight text-neutral-900">
                         {project.name}
                     </h3>
 
-                    <div className="text-slate-300 text-lg leading-relaxed">
+                    <p className="mt-3 leading-relaxed text-neutral-600">
                         {project.description}
-                    </div>
+                    </p>
 
-                    <div className="mt-8 grid grid-cols-8 gap-2">
+                    <div className="mt-6 flex flex-wrap gap-2">
                         {project.skills.map((skill) => (
-                            <div
-                                key={skill.name}
-                                className="project-glowing-text"
-                            >
+                            <span key={skill.name} className="tag">
                                 {skill.name}
-                            </div>
+                            </span>
                         ))}
                     </div>
 
@@ -40,18 +33,15 @@ function ProjectCard({ project }) {
                             href={project.gitHub}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center text-white font-semibold border-b-2 border-indigo-500 pb-1 hover:text-indigo-400 transition-colors cursor-pointer"
+                            className="link-arrow"
                         >
-                            View Project <span className="ml-2">&rarr;</span>
+                            View project <span aria-hidden="true">→</span>
                         </a>
                     </div>
-
                 </div>
-
             </div>
-
-        </section>
-    )
+        </article>
+    );
 }
 
-export default ProjectCard
+export default ProjectCard;

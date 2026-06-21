@@ -1,4 +1,4 @@
-import React from 'react';
+import SectionHeading from "../SectionHeading/SectionHeading.jsx";
 
 const HISTORY = [
     {
@@ -37,74 +37,55 @@ const HISTORY = [
             }
         ]
     }
-
 ];
 
 function WorkHistory() {
     return (
-        <section className="card mx-5">
-            <h2 className="section-title text-2xl font-bold mb-6">
-                Work History
-            </h2>
+        <section id="work" className="scroll-mt-20 border-y border-neutral-200 bg-neutral-50">
+            <div className="section">
+                <SectionHeading label="Experience" title="Work history" />
 
-            <div className="flex flex-col gap-6">
-                {HISTORY.map((job) => (
-                    <div
-                        key={job.id}
-                        className="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-lg"
-                    >
-                        <h3 className="text-xl font-bold text-blue-400 mb-4 border-b border-slate-700 pb-2">
-                            {job.company}
-                        </h3>
+                <div className="flex flex-col gap-6">
+                    {HISTORY.map((job) => (
+                        <div key={job.id} className="card">
+                            <h3 className="border-b border-neutral-200 pb-3 text-xl font-semibold text-neutral-900">
+                                {job.company}
+                            </h3>
 
-                        <div className="flex flex-col gap-8">
-                            {job.roles.map((role, index) => (
-                                <div key={role.id} className="relative">
-                                    {index > 0 && (
-                                        <div className="absolute -top-4 left-0 right-0 border-t border-slate-700 border-dashed" />
-                                    )}
+                            <div className="mt-5 flex flex-col gap-8">
+                                {job.roles.map((role) => (
+                                    <div key={role.id}>
+                                        <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                                            <span className="font-medium text-neutral-900">
+                                                {role.title}
+                                            </span>
+                                            <span className="w-fit rounded-full bg-neutral-100 px-3 py-1 text-xs whitespace-nowrap text-neutral-500">
+                                                {role.date}
+                                            </span>
+                                        </div>
 
-                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 text-gray-300 gap-2">
-                                        <span className="font-semibold text-lg text-white">
-                                            {role.title}
-                                        </span>
-                                        <span className="text-xs bg-slate-700 px-3 py-1 rounded-full text-gray-400 whitespace-nowrap w-fit">
-                                            {role.date}
-                                        </span>
-                                    </div>
-
-                                    {role.accolades && role.accolades.length > 0 && (
-                                        <div className="mb-4">
-                                            <div className="flex flex-col gap-2">
+                                        {role.accolades?.length > 0 && (
+                                            <ul className="mb-4 flex flex-col gap-1.5">
                                                 {role.accolades.map((accolade, i) => (
-                                                    <div key={i} className="text-sm text-yellow-300 bg-yellow-900/20 py-1.5 px-3 rounded border-l-2 border-yellow-500 w-fit">
-                                                         {accolade}
-                                                    </div>
+                                                    <li key={i} className="flex gap-2 text-sm text-neutral-600">
+                                                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                                                        {accolade}
+                                                    </li>
                                                 ))}
-                                            </div>
-                                        </div>
-                                    )}
+                                            </ul>
+                                        )}
 
-                                    <div>
-                                        <div className="text-[10px] uppercase tracking-wider text-gray-500 font-bold mb-2">
-                                            Skills Used
-                                        </div>
                                         <div className="flex flex-wrap gap-2">
                                             {role.skills.map((skill, i) => (
-                                                <span
-                                                    key={i}
-                                                    className="px-2 py-1 bg-slate-700/50 border border-slate-600 text-gray-300 text-xs rounded hover:bg-slate-600 transition-colors"
-                                                >
-                                                    {skill}
-                                                </span>
+                                                <span key={i} className="tag">{skill}</span>
                                             ))}
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

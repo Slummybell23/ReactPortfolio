@@ -1,30 +1,28 @@
-import "./education.css"
-import React from "react";
+import SectionHeading from "../SectionHeading/SectionHeading.jsx";
 
 function Education() {
-
     return (
-        <section className="card mx-5">
-            <h2 className="section-title text-2xl font-bold mb-6">
-                Education
-            </h2>
+        <section id="education" className="scroll-mt-20">
+            <div className="section">
+                <SectionHeading label="Education" title="Where I'm studying" />
 
-            <div className="school-card">
-                <div className="flex flex-col sm:flex-row sm:justify-between mb-4 border-b border-slate-700 pb-2">
-                    <h2 className="school-name">University of Arkansas at Fort Smith</h2>
-                    <span className="school-period">August 2023 - May 2027</span>
-                </div>
+                <div className="card">
+                    <div className="flex flex-col gap-2 border-b border-neutral-200 pb-3 sm:flex-row sm:items-center sm:justify-between">
+                        <h3 className="text-xl font-semibold text-neutral-900">
+                            University of Arkansas at Fort Smith
+                        </h3>
+                        <span className="w-fit rounded-full bg-neutral-100 px-3 py-1 text-xs whitespace-nowrap text-neutral-500">
+                            August 2023 - May 2027
+                        </span>
+                    </div>
 
-                <div className="text-sm text-yellow-300 bg-yellow-900/20 py-1.5 px-3 rounded border-l-2 border-yellow-500 w-fit">
-                     Bachelors of Science in Computer Science
+                    <p className="mt-4 text-neutral-600">
+                        Bachelor of Science in Computer Science
+                    </p>
                 </div>
             </div>
-
-
         </section>
-
-
-    )
+    );
 }
 
 export default Education;

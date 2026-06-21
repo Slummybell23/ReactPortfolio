@@ -1,22 +1,13 @@
-//name, length, context
-function SkillCard({skill}) {
-
-    return(
-        <section className="skill-card">
-            <h3 className="skill-title">{skill.name}</h3>
-            <div className="skill-content">
-                {skill.context}
+function SkillCard({ skill }) {
+    return (
+        <article className="card flex h-full flex-col">
+            <div className="flex items-center justify-between gap-3">
+                <h3 className="text-lg font-semibold text-neutral-900">{skill.name}</h3>
+                <span className="tag whitespace-nowrap">{skill.length}</span>
             </div>
-
-            <hr />
-
-            <div className="skill-footer">
-                Time on Skill: <p className="font-light">{skill.length}</p>
-            </div>
-        </section>
-
-    )
-
+            <p className="mt-3 text-sm leading-relaxed text-neutral-600">{skill.context}</p>
+        </article>
+    );
 }
 
-export default SkillCard
+export default SkillCard;

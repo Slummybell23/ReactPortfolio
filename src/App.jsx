@@ -4,20 +4,9 @@ import MainPage from "./pages/MainPage.jsx";
 
 function App() {
   return (
-    <div>
-
-
-        <Routes>
-            <Route path="/" element={<MainPage />} />
-            {/*<Route path="about" element={<About />} />*/}
-        </Routes>
-
-
-
-
-
-    </div>
-
+    <Routes>
+        <Route path="/" element={<MainPage />} />
+    </Routes>
   )
 }
 
