@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- browser window -->
+  <rect x="64" y="84" width="272" height="232" rx="18" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/>
+
+  <!-- title bar dots -->
+  <circle cx="88" cy="108" r="5" fill="#6366f1"/>
+  <circle cx="106" cy="108" r="5" fill="#d4d4d4"/>
+  <circle cx="124" cy="108" r="5" fill="#d4d4d4"/>
+  <line x1="64" y1="128" x2="336" y2="128" stroke="#f0f0f0" stroke-width="2"/>
+
+  <!-- avatar -->
+  <circle cx="200" cy="182" r="34" fill="#eef2ff"/>
+  <circle cx="200" cy="172" r="13" fill="#6366f1"/>
+  <path d="M174 206 Q200 174 226 206 Z" fill="#6366f1"/>
+
+  <!-- name + content lines -->
+  <rect x="160" y="232" width="80" height="10" rx="5" fill="#d4d4d4"/>
+  <rect x="140" y="252" width="120" height="7" rx="3.5" fill="#e5e5e5"/>
+  <rect x="156" y="266" width="88" height="7" rx="3.5" fill="#e5e5e5"/>
+
+  <!-- accent button -->
+  <rect x="168" y="288" width="64" height="16" rx="8" fill="#6366f1"/>
+</svg>

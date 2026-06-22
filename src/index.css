@@ -20,7 +20,7 @@
 @layer components {
     /* Centered content container + vertical rhythm for every section */
     .section {
-        @apply mx-auto max-w-5xl px-6 py-20 md:py-28;
+        @apply mx-auto max-w-5xl px-6 py-16 md:py-28;
     }
 
     .section-label {

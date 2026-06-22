@@ -1,10 +1,10 @@
 function Hero() {
     return (
         <section id="home" className="scroll-mt-20">
-            <div className="mx-auto max-w-5xl px-6 py-24 md:py-36">
+            <div className="mx-auto max-w-5xl px-6 py-20 md:py-36">
                 <p className="section-label">Software Engineer</p>
 
-                <h1 className="mt-4 text-5xl font-semibold tracking-tight text-neutral-900 md:text-7xl">
+                <h1 className="mt-4 text-5xl font-semibold tracking-tight text-neutral-900 sm:text-6xl md:text-7xl">
                     Cache Salyers
                 </h1>
 
