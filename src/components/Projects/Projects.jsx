@@ -11,6 +11,8 @@ import rewarding1 from "../../assets/rewarding1.jpg";
 import rewarding2 from "../../assets/rewarding2.jpg";
 import rewarding3 from "../../assets/rewarding3.jpg";
 import rewarding4 from "../../assets/rewarding4.jpg";
+import jobTrackr from "../../assets/jobTrackr.png";
+import fileShare from "../../assets/fileShare.svg";
 import homelab from "../../assets/homelab.svg";
 
 function Projects() {
@@ -33,6 +35,25 @@ function Projects() {
             {name: "HealthKit"},
             {name: "StoreKit"},
             {name: "Apple Intelligence"}
+            ]
+        },
+        {name: "JobTrackr", image: jobTrackr, gitHub: "https://git.slummybell.com/slummybell/caches-job-trackr", description: "A self-hosted job-application tracker with a drag-and-drop Kanban board, resume storage, contacts, follow-up reminders, and pipeline analytics. Ships as a single Docker image backed by PostgreSQL, with ASP.NET Core Identity auth, a first-run setup wizard, dark mode, and an installable PWA.", skills: [
+            {name: "C#"},
+            {name: ".Net 10"},
+            {name: "PostgreSQL"},
+            {name: "Entity Framework"},
+            {name: "React"},
+            {name: "Tailwind CSS"},
+            {name: "Docker"}
+            ]
+        },
+        {name: "Single-Use File Share", image: fileShare, gitHub: "https://git.slummybell.com/slummybell/single-use-file-share", description: "Upload a file, get a link, and share it — the file auto-deletes when it expires, so nothing lingers. A Rust (axum + tokio) backend streams uploads and downloads in chunks up to 100 GiB, guards free disk space, and runs a background janitor to purge expired files — all shipped as a single Docker image alongside the React frontend.", skills: [
+            {name: "Rust"},
+            {name: "Axum"},
+            {name: "Tokio"},
+            {name: "React"},
+            {name: "Tailwind CSS"},
+            {name: "Docker"}
             ]
         },
         {name: "Self-Hosted Homelab", image: homelab, gitHub: "https://git.slummybell.com/slummybell", description: "My self-hosted infrastructure — an Unraid server running everything in Docker (including a few containers I built myself), with Jenkins driving automated CI/CD and a Forgejo instance hosting my git repositories. It's where I deploy my projects, experiment, and learn how production systems fit together.", skills: [
